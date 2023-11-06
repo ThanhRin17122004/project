@@ -1,0 +1,36 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+.admin{
+    background-color: #0A0000;
+    padding: 10px 20px;
+}
+header .aside{
+    border: 1px solid #0A0000;
+    grid-column: span 2 / span 2;
+}
+header .aside ul{
+    height: 620px;
+    background-color: #0A0000;  
+}
+header .menu ul li{
+    padding: 20px 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+header ul a{
+    text-decoration: none;
+}
+header .menu ul li:hover{
+    background-color: #EED85D;
+    font-weight: bold;
+    color: #0A0000;
+}
+
