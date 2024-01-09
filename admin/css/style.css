@@ -3,20 +3,20 @@
     margin: 0px;
     box-sizing: border-box;
 }
-header{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-}
 .admin{
     background-color: #0A0000;
     padding: 10px 20px;
 }
+header .auto{
+    width: 250px;
+    height: 221px;
+}
 header .aside{
     border: 1px solid #0A0000;
-    grid-column: span 2 / span 2;
+    background-color: #0A0000;  
 }
 header .aside ul{
-    height: 620px;
+    height: 100%;
     background-color: #0A0000;  
 }
 header .menu ul li{
@@ -24,6 +24,7 @@ header .menu ul li{
     color: white;
     font-size: 16px;
     font-weight: bold;
+    width: 250px;
 }
 header ul a{
     text-decoration: none;
@@ -33,4 +34,218 @@ header .menu ul li:hover{
     font-weight: bold;
     color: #0A0000;
 }
+.main{
+    display: flex;
+}
+.main .main_small{
+    width: 100%;
+}
+.main .main_small .noi_dung{
+    background-color: #EED85D;
+    color: black;
+    width: 100%;
+    font-size: 30px;
+    padding: 20px 20px;
+}
+.form{
+    padding-left: 50px;
+    padding-right: 200px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+.form .mb_tenloai{
+    padding-top: 20px;
+}
+.form .maloai{
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border: 3px solid #EED85D;
+    border-radius: 15px;
+}
+.form textarea{
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border: 3px solid #EED85D;
+    border-radius: 15px;
+}
+.form .tenloai{
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border: 3px solid #EED85D;
+    border-radius: 15px;
+}
+.form input[type="submit"],
+.form input[type="reset"],
+.form input[type="button"]{
+    border-radius: 5px;
+    padding: 10px 15px;
+    background-color: white;
+    border: 3px solid #EED85D;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form input[type="submit"]:hover,
+.form input[type="reset"]:hover,
+.form input[type="button"]:hover{   
+    background-color: #EED85D;
+    border: 3px solid #0A0000;
+}
+/* DANH SÁCH LOẠI HÀNG HÓA */
+.form_danh_sach{
+    padding: 20px 20px;
+}
+.formdanhsachloaihang table{
+    width: 100%;
+    font-size: 18px;
+    border-collapse:collapse ;
+    border: 1px #DDECD5 solid ;
+    text-align: center;
+}
+.formdanhsachloaihang table .sua,.xoa{
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px #ccc solid;
+}
+.formdanhsachloaihang table .sua:hover,.xoa:hover{
+    background-color: #EED85D;
+    color: #0A0000;
+}
+.formdanhsachloaihang table th{
+    /* width: 10%; */
+    background-color: #DDECD5;
+    padding: 10px 20px;
+    color: #0A0000;
+    border: 1px #DDECD5 solid ;
+}
+.formdanhsachloaihang table td{
+    padding: 10px 20px;
+    border-bottom: 1px #ccc solid ;
+    border-right: 1px #ccc solid ;
+    border-left: 1px #ccc solid ;
+}
+.form_button{
+    margin-top: 20px;
+}
+.form_button input[type="submit"],
+.form_button input[type="reset"],
+.form_button input[type="button"]{
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px #ccc solid;
+}
+.form_button input[type="submit"]:hover,
+.form_button input[type="reset"]:hover,
+.form_button input[type="button"]:hover{
+    background-color: #EED85D;
+    color: #0A0000;
+}
 
+
+
+/* SELECT DANH MUC */
+.select{
+    padding: 5px;
+    border-radius: 10px;
+}
+.selectdm{
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 80px;
+}
+.select_input{
+    padding:5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.select_go{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #0A0000;
+    background-color: white;
+    font-weight: bold;
+}
+.select_go:hover{
+    background-color: #EED85D;
+}
+
+
+
+
+
+/* TRANG HOME */
+.home{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home p{
+    width: 40em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    color: #0A0000;
+    display: inline-block;
+    border-width: 4px 0;
+    padding: 1.5em 0 em;
+    color: black;
+    font-size: 30px;
+}
+.home p span{
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0;
+    text-shadow: 0 0 80px red;
+    background: url("https://img4.thuthuatphanmem.vn/uploads/2019/12/09/hinh-nen-hoa-van-mau-vang_041106432.jpg") repeat-y;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: anim 10s linear infinite;
+    font-size: 80px;
+}
+@-webkit-keyframes anim{
+    0%{
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: 100%;
+    }
+}
+.thong_bao{
+    color: red;
+    font-size: 18px;
+    margin: 5px 10px;
+}
+
+
+
+
+.blue{
+    color: rgb(120, 120, 181);
+    font-weight: 500;
+}
+.red{
+    color: red;
+    font-weight: 500;
+}
+.green{
+    color: green;
+    font-weight: 500;
+}
+
+
+
+.select{
+    padding: 10px 10px;
+    margin-top: 10px;
+    border: 3px solid #EED85D;
+    border-radius: 15px;
+    width: 100%;
+}

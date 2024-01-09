@@ -1,0 +1,23 @@
+.binhluan{
+    width: 100%;
+}
+.binhluan table td:nth-child(1){
+    width: 70%;
+}
+.binhluan table td:nth-child(2){
+    width: 20%;
+}
+.binhluan table td:nth-child(3){
+    width: 10%;
+}
+.dangnhap{
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px #007ACC solid;
+    margin-bottom: 10px;
+}
+.form_binh_luan{
+    margin: 0 auto;
+    display: block;
+}
